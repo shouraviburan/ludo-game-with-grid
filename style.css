@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ludo-board {
+    display: grid; 
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vmin;
+    height: 80vmin;
+    grid-gap: 2px;
+    
+    text-align: center;
+}
+
+div {
+    border: 1px solid black;
+    border-radius: 5px;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto auto;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff50; /* 50 for opacity */
+}
+
+.circle {    
+    border-radius: 100%;
+    display: flex;
+    width: 70%;
+    height: 70%;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+}
+
+#green-corner {
+    grid-area: 1 / 1 / 7 / 7;
+    background-color: green;
+}
+
+#yellow-corner {
+    grid-area: 1 / 10 / 7 / 16;
+    background-color: yellow;
+}
+
+#red-corner {
+    grid-area: 10 / 1 / 16 / 7;
+    background-color: red;
+}
+
+#blue-corner {
+    grid-area: 10  / 10 / 16 / 16;
+    background-color: blue;
+}
+
+
+
+#yellow-arrow {
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    grid-area: 7 / 7 / 10 / 10;
+    background-color: yellow;
+}
+
+#green-arrow {
+    clip-path: polygon(50% 50%, 0 0, 0 100%);
+    grid-area: 7 / 7 / 10 / 10;
+    background-color: green;
+}
+
+#red-arrow {
+    clip-path: polygon(50% 50%, 100% 100%, 0 100%);
+    grid-area: 7 / 7 / 10 / 10;
+    background-color: red;
+}
+
+#blue-arrow {
+    clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+    grid-area: 7 / 7 / 10 / 10;
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#green-1 {
+    grid-area: 7 / 2;
+}
+
+#green-2 {
+    grid-area: 8 / 2;
+}
+
+#green-3 {
+    grid-area: 8 / 3;
+}
+
+#green-4 {
+    grid-area: 8 / 4;
+}
+
+#green-5 {
+    grid-area: 8 / 5;
+}
+
+#green-6 {
+    grid-area: 8 / 6;
+}
+
+#green-7 {
+    grid-area: 3 / 7;
+}
+
+#yellow-1 {
+    grid-area: 2 / 8;
+}
+
+#yellow-2 {
+    grid-area: 3 / 8;
+}
+
+#yellow-3 {
+    grid-area: 4 / 8;
+}
+
+#yellow-4 {
+    grid-area: 5 / 8;
+}
+
+#yellow-5 {
+    grid-area: 6 / 8;
+}
+
+#yellow-6 {
+    grid-area: 2 / 9;
+}
+
+#yellow-7 {
+    grid-area: 7 / 13;
+}
+
+#red-1 {
+    grid-area: 14 / 7;
+}
+
+#red-2 {
+    grid-area: 14 / 8;
+}
+
+#red-3 {
+    grid-area: 13 / 8;
+}
+
+#red-4 {
+    grid-area: 12 / 8;
+}
+
+#red-5 {
+    grid-area: 11 / 8;
+}
+
+#red-6 {
+    grid-area: 10 / 8;
+}
+
+#red-7 {
+    grid-area: 9 / 3;
+}
+
+#blue-1 {
+    grid-area: 8 / 10;
+}
+
+#blue-2 {
+    grid-area: 8 / 11;
+}
+
+#blue-3 {
+    grid-area: 8 / 12;
+}
+
+#blue-4 {
+    grid-area: 8 / 13;
+}
+
+#blue-5 {
+    grid-area: 8 / 14;
+}
+
+#blue-6 {
+    grid-area: 9 / 14;
+}
+
+#blue-7 {
+    grid-area: 13 / 9;
+}
